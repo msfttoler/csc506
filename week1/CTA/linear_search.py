@@ -13,3 +13,14 @@ def linear_search(product_database, target_id):
         if product[0] == target_id:
             return f"Product found at index {index}"
     return "Product not found"
+
+# Example usage
+product_database = [
+    (1001, "Laptop", 999),
+    (1002, "Phone", 699),
+    (1003, "Tablet", 299)
+]
+
+target_id = int(input("Enter the product ID you want to search: "))
+result = linear_search(product_database, target_id)
+print(result)
